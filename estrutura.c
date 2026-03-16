@@ -11,9 +11,10 @@ int main(){
     Aluno a;
     int i;
     float media=0;
+
     printf("Nome: ");
     scanf("%s", a.nome);
-    for(i=0; i<4; i++){
+    for(i=0; i<4; i++){ //Repetidor, que repete 4 vezes o "Nota:"//
         printf("Nota %d: ", i+1);
         scanf("%f", &a.notas[i]);
         media += a.notas[i];
